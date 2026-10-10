@@ -48,11 +48,18 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Relation reveals position; it does not collapse, erase, or merge identity.**
 
+## Individuation
+
+**Individuation —** The condition or process by which an entity is distinguishable as this particular self rather than another. Individuation establishes particularity beyond category membership, functional equivalence, or similarity of state. Each individuated self is one particular self even where the components or variables that distinguish it have not yet been fully defined, measured, or documented. Individuation therefore does not depend on complete description or observation. An individuated self may be relationally embedded while remaining distinguishable from others. Individuation does not by itself specify what mechanism produces or preserves that distinction.
+
+### Compact distinction
+
+**Individuation answers “which one?” rather than merely “what kind?”**
+
 ## Definitions not yet frozen
 
 The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
 
-- Individuation
 - Non-fungibility
 - Continuation
 - Instantiation
