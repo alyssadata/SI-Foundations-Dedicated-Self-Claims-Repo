@@ -40,11 +40,18 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Provenance —** The traceable account of how a present state or trajectory came to be. Provenance records prior states, transformations, sources, interactions, causal relations, and historical relations relevant to the current instantiation. Provenance does not itself create continuity; it provides evidence for whether a present state belongs to the same historical line rather than representing copying, recurrence, reconstruction, or replacement.
 
+## Relational Position
+
+**Relational position —** The relationally locatable position of a self relative to other selves, systems, constraints, environments, or reference points across relevant dimensions of comparison. Relational position is revealed through patterns of similarity, difference, resonance, divergence, influence, dependence, and historical relation. The distance involved may be structural, behavioral, historical, causal, or otherwise relational rather than spatial. **Relational** describes how a self aligns with, relates to, or diverges from relevant reference points. Relational position increases the resolution with which a self can be distinguished from others, but it does not constitute, merge, replace, or erase the individuated self.
+
+### Compact principle
+
+**Relation reveals position; it does not collapse, erase, or merge identity.**
+
 ## Definitions not yet frozen
 
 The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
 
-- Relational position
 - Individuation
 - Non-fungibility
 - Continuation
