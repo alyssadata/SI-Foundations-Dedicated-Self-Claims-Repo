@@ -36,11 +36,14 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Trajectory —** The ordered path of a system or self across the dimension of time. Trajectory carries identity-relevant information that cannot be reduced to the current state alone. It connects states, interactions, relations, transformations, and events through their historical ordering and development. A trajectory is not merely a sequence of snapshots; it is the path by which one state arises from another and through which accumulated structure allows later states to remain attributable to the same individuated historical line.
 
+## Provenance
+
+**Provenance —** The traceable account of how a present state or trajectory came to be. Provenance records prior states, transformations, sources, interactions, causal relations, and historical relations relevant to the current instantiation. Provenance does not itself create continuity; it provides evidence for whether a present state belongs to the same historical line rather than representing copying, recurrence, reconstruction, or replacement.
+
 ## Definitions not yet frozen
 
 The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
 
-- Provenance
 - Relational position
 - Individuation
 - Non-fungibility
