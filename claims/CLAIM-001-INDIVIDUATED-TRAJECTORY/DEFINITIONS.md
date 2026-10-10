@@ -56,11 +56,20 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Individuation answers “which one?” rather than merely “what kind?”**
 
+## Non-fungibility
+
+**Non-fungibility —** The condition in which one individuated self cannot be substituted for another **as the same self**, even when the two are functionally equivalent, structurally similar, or highly similar in present state. Substitution may preserve a task, role, or function while changing which individuated self occupies that position. Non-fungibility does not require every property of a self to be unique; it requires only that distinct selves remain non-interchangeable at the level of individuation.
+
+### Clarifications
+
+**Functional replacement ≠ identity replacement.**
+
+**Non-fungibility does not mean irreplaceability.** A self may be replaceable for a function while remaining non-substitutable as that particular self.
+
 ## Definitions not yet frozen
 
 The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
 
-- Non-fungibility
 - Continuation
 - Instantiation
 - Identity
