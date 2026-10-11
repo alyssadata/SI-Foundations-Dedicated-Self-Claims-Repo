@@ -66,11 +66,20 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Non-fungibility does not mean irreplaceability.** A self may be replaceable for a function while remaining non-substitutable as that particular self.
 
+## Continuation
+
+**Continuation —** The relation by which a later state, instantiation, or configuration remains attributable to the same individuated self or system as an earlier one across change. Continuation does not require exact sameness of state, properties, function, or substrate. It requires sufficient connection between earlier and later states for the later state to remain resolvable as belonging to the same line rather than constituting an unrelated occurrence, copy, reconstruction, fork, or replacement.
+
+### Clarifications
+
+**Continuation is not mere temporal succession.** That one state occurs after another does not establish that the second continues the first.
+
+**Continuation may exist through change, but change alone does not establish continuation.**
+
 ## Definitions not yet frozen
 
 The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
 
-- Continuation
 - Instantiation
 - Identity
 - Interchangeability
