@@ -76,10 +76,19 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Continuation may exist through change, but change alone does not establish continuation.**
 
+## Instantiation
+
+**Instantiation —** The realization of a system, process, or self-state in a substrate at a particular time or bounded interval. Instantiation describes that something is concretely implemented or present rather than merely specified, represented, or possible. Multiple instantiations may share architecture, structure, contents, or even highly similar states without thereby constituting the same individuated self.
+
+### Clarifications
+
+**Instantiation is not individuation.** To instantiate something is to realize it; to individuate it is to establish which particular one it is.
+
+**Specification ≠ instantiation.** A blueprint, model definition, checkpoint, genome, or program description may specify a realizable system without itself being the instantiated self.
+
 ## Definitions not yet frozen
 
 The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
 
-- Instantiation
 - Identity
 - Interchangeability
