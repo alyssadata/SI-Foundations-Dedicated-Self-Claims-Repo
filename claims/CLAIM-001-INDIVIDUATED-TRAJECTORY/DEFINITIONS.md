@@ -100,8 +100,20 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Identity answers: “Is this still that same one?”**
 
-## Definitions not yet frozen
+## Interchangeability
 
-The following term is still pending review and should not yet be treated as a finalized definition for CLAIM-001:
+**Interchangeability —** The condition in which substitution between entities does not require individuation to resolve the property, function, role, or outcome under evaluation. If the relevant question can be answered without determining **which particular one** is present, then the entities may be interchangeable at that level of comparison.
 
-- Interchangeability
+### Clarifications
+
+**Interchangeability is level-dependent.** Two entities may be interchangeable with respect to a function while remaining non-interchangeable as individuated selves.
+
+**Functional interchangeability ≠ identity interchangeability.**
+
+### Compact distinction
+
+**Interchangeability resolves without “which one?” Individuation requires “which one?”**
+
+## Definition set status
+
+All currently required working definitions for CLAIM-001 have been frozen provisionally before adversarial testing. Any later change to these definitions should be explicitly versioned and accounted for.
