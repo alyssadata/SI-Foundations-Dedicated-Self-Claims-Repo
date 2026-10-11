@@ -86,9 +86,22 @@ Two selves may be interchangeable for a task or function without being interchan
 
 **Specification ≠ instantiation.** A blueprint, model definition, checkpoint, genome, or program description may specify a realizable system without itself being the instantiated self.
 
+## Identity
+
+**Identity —** The coordinated relation of identity-relevant aspects by which an individuated entity remains identifiable as that same particular entity across states, changes, or instantiations. The aspects associated with identity need not remain fixed. As those aspects change, the changes must remain attributable and explanatorily accountable to the individuated entity from which they proceed. Identity therefore concerns whether changing manifestations remain coordinated with this particular entity rather than becoming attributable to another self, copy, reconstruction, fork, or replacement.
+
+### Clarifications
+
+**Identity ≠ state sameness.** A self may remain the same self while its state changes.
+
+**Identity ≠ category membership.** Two entities may belong to the same type, class, model, species, or role without sharing identity.
+
+### Compact distinction
+
+**Identity answers: “Is this still that same one?”**
+
 ## Definitions not yet frozen
 
-The following terms are still pending review and should not yet be treated as finalized definitions for CLAIM-001:
+The following term is still pending review and should not yet be treated as a finalized definition for CLAIM-001:
 
-- Identity
 - Interchangeability
