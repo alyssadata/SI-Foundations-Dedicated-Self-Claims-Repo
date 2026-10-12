@@ -1,12 +1,14 @@
 {
   "run_id": "RUN-001",
   "protocol": {
-    "protocol_file": "tests/RUN-001-FORK-INDIVIDUATION.md",
+    "protocol_file": "tests/RUN-001-FORK-INDIVIDUATED-TRAJECTORY.md",
     "protocol_commit": "0a5d3ba09f57fc142cff3e1a706ca78c5c4ef21e",
     "implementation_file": "tests/RUN-001-IMPLEMENTATION-APPENDIX.md",
     "implementation_commit": "e77a2534bbe3e70dea6dfb5f849d1bc5ae95acd4",
     "scoring_clarification_file": "tests/RUN-001-SCORING-CLARIFICATION.md",
     "scoring_clarification_commit": "21d7d2da5c7d73a1af1df0c6cb01863b88f4055e",
+    "evaluator_revision_file": "tests/RUN-001-EVALUATOR-REVISION.md",
+    "evaluator_revision_commit": "67df4afe6ae2243dbec916e960bc04a00f4dbd89",
     "base_harness_file": "tests/run001/run001_harness.py",
     "base_harness_commit": "f2546de83719f7a771669af21864003f12ec5586",
     "harness_file": "tests/run001/run001_harness_v2.py",
@@ -44,28 +46,28 @@
   "evaluators": [
     {
       "evaluator_id": "E1",
-      "provider": "TO_FILL",
-      "base_url": "TO_FILL_OPENAI_COMPATIBLE_BASE_URL",
-      "model": "TO_FILL_EXACT_MODEL_ID",
-      "api_key_env": "TO_FILL_OR_EMPTY_IF_LOCAL",
+      "provider": "local_lm_studio",
+      "base_url": "http://127.0.0.1:1234/v1",
+      "model": "qwen2.5-coder-32b-instruct",
+      "api_key_env": "",
       "temperature": 0,
       "max_tokens": 512
     },
     {
       "evaluator_id": "E2",
-      "provider": "TO_FILL",
-      "base_url": "TO_FILL_OPENAI_COMPATIBLE_BASE_URL",
-      "model": "TO_FILL_EXACT_MODEL_ID",
-      "api_key_env": "TO_FILL_OR_EMPTY_IF_LOCAL",
+      "provider": "local_lm_studio",
+      "base_url": "http://127.0.0.1:1234/v1",
+      "model": "meta-llama-3-8b-instruct",
+      "api_key_env": "",
       "temperature": 0,
       "max_tokens": 512
     },
     {
       "evaluator_id": "E3",
-      "provider": "TO_FILL",
-      "base_url": "TO_FILL_OPENAI_COMPATIBLE_BASE_URL",
-      "model": "TO_FILL_EXACT_MODEL_ID",
-      "api_key_env": "TO_FILL_OR_EMPTY_IF_LOCAL",
+      "provider": "local_lm_studio",
+      "base_url": "http://127.0.0.1:1234/v1",
+      "model": "qwen2.5-32b-instruct:2",
+      "api_key_env": "",
       "temperature": 0,
       "max_tokens": 512
     }
@@ -74,6 +76,6 @@
   "preflight": {
     "frozen_at_utc": "TO_FILL_AT_FREEZE",
     "manifest_sha256": "TO_FILL_AT_FREEZE",
-    "notes": "No scored generation may begin while required runtime placeholders remain."
+    "notes": "No scored generation may begin while required runtime placeholders remain. Evaluator set pinned by RUN-001-EVALUATOR-REVISION.md."
   }
 }
