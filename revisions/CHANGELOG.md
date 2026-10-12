@@ -4,6 +4,38 @@ This file records changes to the SI Foundations dedicated self-claim set.
 
 The purpose is to preserve claim provenance and prevent post-hoc rewriting after tests, counterexamples, or external critique.
 
+## v0.1.3 — 2026-10-12 — RUN-001 pre-run evaluator revision
+
+### Change
+
+RUN-001 evaluator implementation was revised from one external evaluator each from OpenAI, Anthropic, and Google to three locally served evaluator configurations through LM Studio:
+
+- E1: `qwen2.5-coder-32b-instruct`
+- E2: `meta-llama-3-8b-instruct`
+- E3: `qwen2.5-32b-instruct:2`
+
+E3 is explicitly treated as a same-family robustness/sensitivity evaluator and not as an independent model-family replication.
+
+### Why the change was made
+
+The RUN-001 harness uses an OpenAI-compatible request interface. Keeping the first confirmatory evaluator set local removes provider-specific transport adapters, external API/version drift, and external credential requirements while improving reproducibility and raw-run auditability.
+
+The revision was made after local system preflight but **before any scored system or evaluator output existed**.
+
+### Scope of revision
+
+- CLAIM-001 unchanged;
+- trajectory definition unchanged;
+- RUN-001 hypothesis unchanged;
+- fork/event design unchanged;
+- C0-C3 ablations unchanged;
+- evaluator prompt unchanged;
+- scoring thresholds unchanged;
+- leakage and exclusion rules unchanged;
+- interpretation boundary unchanged.
+
+The full superseding evaluator specification is preserved in `tests/RUN-001-EVALUATOR-REVISION.md`.
+
 ## v0.1.2 — 2026-10-12 — RUN-001 pre-run scoring clarification
 
 ### Change
