@@ -4,6 +4,28 @@ This file records changes to the SI Foundations dedicated self-claim set.
 
 The purpose is to preserve claim provenance and prevent post-hoc rewriting after tests, counterexamples, or external critique.
 
+## v0.1.1 — 2026-10-11 — Pre-test conceptual refinement
+
+### Change
+
+The working definition of **Trajectory** in CLAIM-001 was refined from an ordered path across time to the **historically occupied path of a particular instantiation through temporally and relationally situated events**.
+
+### Why the change was made
+
+Adversarial analysis of copying, memory transfer, reconvergence, and merge cases exposed that an ordered sequence or description of states was not sufficiently precise. Two systems can contain identical descriptions, memories, or even isomorphic sequences while remaining distinct because the relevant events occurred at different temporal and relational positions.
+
+The refinement therefore makes explicit that:
+
+- **descriptive trajectory != occupied trajectory**;
+- **time + position are structural to trajectory**;
+- reproducing the contents of an earlier event at a later or otherwise different position creates a new event rather than reoccupying the prior event-position;
+- position is not restricted to physical space and may be relational, causal, historical, or structural;
+- a deeper relation to literal physical spacetime remains an open question and is not asserted by this revision.
+
+### Scope of revision
+
+This is a pre-formal-test conceptual clarification arising from adversarial reasoning, not an empirical test result. It narrows the intended meaning of trajectory without changing the frozen parent claim: **Self is individuated by a non-fungible trajectory, not substrate alone.**
+
 ## v0.1 — 2026-10-10 — Pre-test baseline
 
 Initial claim set frozen before formal testing.
