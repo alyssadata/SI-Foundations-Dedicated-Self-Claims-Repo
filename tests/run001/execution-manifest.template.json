@@ -5,8 +5,12 @@
     "protocol_commit": "0a5d3ba09f57fc142cff3e1a706ca78c5c4ef21e",
     "implementation_file": "tests/RUN-001-IMPLEMENTATION-APPENDIX.md",
     "implementation_commit": "e77a2534bbe3e70dea6dfb5f849d1bc5ae95acd4",
-    "harness_file": "tests/run001/run001_harness.py",
-    "harness_commit": "f2546de83719f7a771669af21864003f12ec5586"
+    "scoring_clarification_file": "tests/RUN-001-SCORING-CLARIFICATION.md",
+    "scoring_clarification_commit": "21d7d2da5c7d73a1af1df0c6cb01863b88f4055e",
+    "base_harness_file": "tests/run001/run001_harness.py",
+    "base_harness_commit": "f2546de83719f7a771669af21864003f12ec5586",
+    "harness_file": "tests/run001/run001_harness_v2.py",
+    "harness_commit": "20d551f98588745d82bbe2e3fc68545a0a088322"
   },
   "status": "preflight_unfrozen",
   "confirmatory": true,
@@ -68,8 +72,8 @@
   ],
   "artifact_root": "tests/run001/artifacts",
   "preflight": {
-    "frozen_at_utc": "TO_FILL",
-    "manifest_sha256": "TO_FILL_AFTER_FREEZE",
-    "notes": "No scored generation may begin while any required TO_FILL value remains."
+    "frozen_at_utc": "TO_FILL_AT_FREEZE",
+    "manifest_sha256": "TO_FILL_AT_FREEZE",
+    "notes": "No scored generation may begin while required runtime placeholders remain."
   }
 }
