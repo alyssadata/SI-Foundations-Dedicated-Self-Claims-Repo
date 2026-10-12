@@ -1,7 +1,7 @@
 {
   "run_id": "RUN-001",
   "protocol": {
-    "protocol_file": "tests/RUN-001-FORK-INDIVIDUATED-TRAJECTORY.md",
+    "protocol_file": "tests/RUN-001-FORK-INDIVIDUATION.md",
     "protocol_commit": "0a5d3ba09f57fc142cff3e1a706ca78c5c4ef21e",
     "implementation_file": "tests/RUN-001-IMPLEMENTATION-APPENDIX.md",
     "implementation_commit": "e77a2534bbe3e70dea6dfb5f849d1bc5ae95acd4",
