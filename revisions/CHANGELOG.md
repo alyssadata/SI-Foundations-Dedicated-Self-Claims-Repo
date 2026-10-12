@@ -4,6 +4,38 @@ This file records changes to the SI Foundations dedicated self-claim set.
 
 The purpose is to preserve claim provenance and prevent post-hoc rewriting after tests, counterexamples, or external critique.
 
+## v0.1.4 — 2026-10-12 — RUN-001 pre-evaluation execution revision
+
+### Change
+
+RUN-001 evaluator execution was changed from one monolithic all-evaluator pass to a sequential per-evaluator wrapper: `tests/run001/run001_harness_v3.py`.
+
+The wrapper runs exactly one already-frozen evaluator configuration at a time and preserves existing evaluator outputs rather than overwriting them. A transport/runtime interruption can therefore be resumed by skipping only prior outputs whose stored packet SHA-256 exactly matches the current packet.
+
+### Why the change was made
+
+The first monolithic evaluator attempt timed out before writing any evaluator output. Inspection showed that several large local models were simultaneously resident on a 24 GB unified-memory machine. LM Studio's runtime behavior made the all-at-once execution path operationally unsuitable for the frozen local evaluator set.
+
+At the time of revision:
+
+- all 20 fork pairs had already been generated;
+- zero evaluator output files existed;
+- no scores had been computed;
+- no evaluator result had been observed or used to motivate the change.
+
+### Scope of revision
+
+- generated branch artifacts unchanged;
+- frozen evaluator IDs/models unchanged;
+- C0-C3 packets unchanged;
+- evaluator prompts and JSON schema unchanged;
+- one-format-repair policy unchanged;
+- support/weakening thresholds unchanged;
+- scoring and leakage rules unchanged;
+- CLAIM-001 unchanged.
+
+Generation, freeze, audit, and scoring remain governed by `run001_harness_v2.py`. The full operational rationale is preserved in `tests/RUN-001-EVALUATION-EXECUTION-REVISION.md`.
+
 ## v0.1.3 — 2026-10-12 — RUN-001 pre-run evaluator revision
 
 ### Change
