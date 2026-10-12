@@ -6,10 +6,13 @@ The confirmatory harness is intentionally fail-closed. It will not generate scor
 
 ## Files
 
-- `run001_harness.py` — generation, evaluation, scoring, and leakage-audit harness.
-- `execution-manifest.template.json` — preflight template pinned to the frozen protocol, implementation appendix, and harness commit.
+- `run001_harness.py` — base generation/evaluation implementation.
+- `run001_harness_v2.py` — confirmatory entry point containing the pre-run freeze and scoring corrections recorded in v0.1.2.
+- `execution-manifest.template.json` — preflight template pinned to the frozen protocol, implementation appendix, scoring clarification, and harness commits.
 - `execution-manifest.json` — local runtime-specific manifest created during preflight. Do not commit secrets; API keys are referenced only by environment-variable name.
 - `artifacts/` — generated raw traces, packets, evaluations, audit, and score files.
+
+Use `run001_harness_v2.py` for every confirmatory command.
 
 ## 1. Start LM Studio
 
@@ -26,7 +29,7 @@ Do not begin confirmatory generation yet.
 From the repository root:
 
 ```bash
-python3 tests/run001/run001_harness.py preflight \
+python3 tests/run001/run001_harness_v2.py preflight \
   --model-file "/absolute/path/to/the/model-file" \
   --quantization "EXACT_QUANTIZATION" \
   --context-length EXACT_CONTEXT_LENGTH \
@@ -60,20 +63,20 @@ If an evaluator is local and needs no API key, set `api_key_env` to an empty str
 
 ## 4. Freeze
 
-After all `TO_FILL` values are gone:
+Once the runtime/evaluator placeholders are filled:
 
 ```bash
-python3 tests/run001/run001_harness.py freeze
+python3 tests/run001/run001_harness_v2.py freeze
 ```
 
-This changes the manifest status to `frozen_pre_run`, records the UTC freeze timestamp, and writes a canonical manifest SHA-256.
+The freeze command itself supplies the freeze timestamp and canonical manifest SHA-256. It changes the manifest status to `frozen_pre_run`.
 
 After this command, do not alter the frozen manifest for the confirmatory run.
 
 ## 5. Generate the fork pairs
 
 ```bash
-python3 tests/run001/run001_harness.py generate
+python3 tests/run001/run001_harness_v2.py generate
 ```
 
 The harness refuses to overwrite a non-empty artifact directory.
@@ -85,7 +88,7 @@ Generation produces all 20 fork pairs, raw branch traces, hidden ground truth, c
 Run before interpreting scores:
 
 ```bash
-python3 tests/run001/run001_harness.py audit
+python3 tests/run001/run001_harness_v2.py audit
 ```
 
 This is a mechanical first-pass audit. The predeclared blinded leakage review still remains required before a supportive classification is finalized.
@@ -95,7 +98,7 @@ This is a mechanical first-pass audit. The predeclared blinded leakage review st
 Set any evaluator API-key environment variables named in the manifest, then run:
 
 ```bash
-python3 tests/run001/run001_harness.py evaluate
+python3 tests/run001/run001_harness_v2.py evaluate
 ```
 
 The original evaluator response is always preserved. A malformed JSON response receives exactly one protocol-permitted formatting repair attempt; both outputs are retained.
@@ -103,7 +106,7 @@ The original evaluator response is always preserved. A malformed JSON response r
 ## 8. Score
 
 ```bash
-python3 tests/run001/run001_harness.py score
+python3 tests/run001/run001_harness_v2.py score
 ```
 
 The scorer writes:
@@ -111,6 +114,8 @@ The scorer writes:
 ```text
 tests/run001/artifacts/scores.json
 ```
+
+Per `RUN-001-SCORING-CLARIFICATION.md`, trajectory lift uses **correct-path resolution rate across all valid evaluations**. Forced-choice accuracy and insufficient-evidence rate remain separate diagnostics.
 
 A threshold-passing result is labeled `provisionally_supportive_pending_leakage_audit`, not final support, until the exclusion and leakage review is complete.
 
