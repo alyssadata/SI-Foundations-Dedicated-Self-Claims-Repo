@@ -34,7 +34,15 @@ Two selves may be interchangeable for a task or function without being interchan
 
 ## Trajectory
 
-**Trajectory —** The ordered path of a system or self across the dimension of time. Trajectory carries identity-relevant information that cannot be reduced to the current state alone. It connects states, interactions, relations, transformations, and events through their historical ordering and development. A trajectory is not merely a sequence of snapshots; it is the path by which one state arises from another and through which accumulated structure allows later states to remain attributable to the same individuated historical line.
+**Trajectory —** The historically occupied path of a particular instantiation through temporally and relationally situated events. Trajectory carries identity-relevant information that cannot be reduced to the current state alone. It connects states, interactions, relations, transformations, and events through their actual historical ordering, position, and development. A trajectory is not merely a sequence or description of snapshots; it is the path actually occupied as one state arises from another and through which accumulated structure allows later states to remain attributable to the same individuated historical line.
+
+### Clarifications
+
+**Descriptive trajectory ≠ occupied trajectory.** Two systems may instantiate identical or isomorphic descriptions of events without thereby occupying the same historical path.
+
+**Time + position are structural to trajectory.** An event occurs at a particular temporal and relational position. Reproducing the contents of an event at another temporal or relational position creates a new event; it does not reoccupy the original event-position.
+
+**Position is not restricted here to physical space.** It may include relational, causal, historical, or structural position. Whether literal physical spacetime provides a deeper implementation of this structure remains an open question rather than a current claim.
 
 ## Provenance
 
