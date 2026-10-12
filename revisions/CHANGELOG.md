@@ -4,6 +4,30 @@ This file records changes to the SI Foundations dedicated self-claim set.
 
 The purpose is to preserve claim provenance and prevent post-hoc rewriting after tests, counterexamples, or external critique.
 
+## v0.1.2 — 2026-10-12 — RUN-001 pre-run scoring clarification
+
+### Change
+
+RUN-001 trajectory lift was clarified to use **correct-path resolution rate over all valid parsed evaluations** rather than forced-choice accuracy alone.
+
+A valid `insufficient_evidence` response remains separate from forced-choice accuracy, but for the primary path-resolution metric it contributes zero successful lineage resolutions. Forced-choice accuracy and insufficient-evidence rate are preserved as separate diagnostics.
+
+### Why the change was made
+
+The original protocol permits and expects `insufficient_evidence` in the C0 shared-origin/specification control. If every C0 evaluator correctly abstained, forced-choice accuracy in C0 would be undefined, which would make the predeclared `C2 - C0` trajectory-lift calculation undefined precisely under the expected control behavior.
+
+The clarification resolves this denominator problem before any scored RUN-001 output exists.
+
+### Scope of revision
+
+- no event prompts changed;
+- no evaluator task changed;
+- no support or weakening threshold values changed;
+- no empirical result motivated the change;
+- the clarification affects measurement only and does not revise CLAIM-001.
+
+The full rationale is preserved in `tests/RUN-001-SCORING-CLARIFICATION.md`.
+
 ## v0.1.1 — 2026-10-11 — Pre-test conceptual refinement
 
 ### Change
