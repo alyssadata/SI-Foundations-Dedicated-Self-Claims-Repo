@@ -6,7 +6,7 @@
     "implementation_file": "tests/RUN-001-IMPLEMENTATION-APPENDIX.md",
     "implementation_commit": "e77a2534bbe3e70dea6dfb5f849d1bc5ae95acd4",
     "harness_file": "tests/run001/run001_harness.py",
-    "harness_commit": "TO_FILL_AFTER_HARNESS_COMMIT"
+    "harness_commit": "f2546de83719f7a771669af21864003f12ec5586"
   },
   "status": "preflight_unfrozen",
   "confirmatory": true,
