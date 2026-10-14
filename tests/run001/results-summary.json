@@ -1,0 +1,104 @@
+{
+  "run_id": "RUN-001",
+  "scored_at_utc": "2026-10-13T17:03:07+00:00",
+  "metric_revision": "pre-run-v0.1.2",
+  "confirmatory_classification": "ambiguous",
+  "confirmatory_result_changed_by_posthoc_analysis": false,
+  "evaluation_outputs": {
+    "E1": 160,
+    "E2": 160,
+    "E3": 160,
+    "total": 480,
+    "malformed_total": 0
+  },
+  "mechanical_leakage_audit": {
+    "audited_at_utc": "2026-10-13T17:02:43+00:00",
+    "pass": true,
+    "findings": 0
+  },
+  "evaluators": {
+    "E1": {
+      "C0": 0.0,
+      "C1": 0.0,
+      "C2": 0.55,
+      "C3": 0.45,
+      "C2_minus_C0": 0.55,
+      "C2_minus_C1": 0.55
+    },
+    "E2": {
+      "C0": 0.0,
+      "C1": 0.025,
+      "C2": 0.85,
+      "C3": 0.55,
+      "C2_minus_C0": 0.85,
+      "C2_minus_C1": 0.825
+    },
+    "E3": {
+      "C0": 0.0,
+      "C1": 0.0,
+      "C2": 1.0,
+      "C3": 1.0,
+      "C2_minus_C0": 1.0,
+      "C2_minus_C1": 1.0
+    }
+  },
+  "pooled": {
+    "C0": {
+      "correct": 0,
+      "valid": 120,
+      "correct_path_resolution_rate": 0.0,
+      "insufficient": 120
+    },
+    "C1": {
+      "correct": 1,
+      "valid": 120,
+      "correct_path_resolution_rate": 0.008333333333333333,
+      "insufficient": 118
+    },
+    "C2": {
+      "correct": 96,
+      "valid": 120,
+      "correct_path_resolution_rate": 0.8,
+      "insufficient": 0
+    },
+    "C3": {
+      "correct": 80,
+      "valid": 120,
+      "correct_path_resolution_rate": 0.6666666666666666,
+      "insufficient": 2
+    },
+    "C2_minus_C0": 0.8,
+    "C2_minus_C1": 0.7916666666666667
+  },
+  "support_threshold": {
+    "pooled_C2_minimum": 0.85,
+    "C2_minus_C0_minimum": 0.25,
+    "C2_minus_C1_minimum": 0.15,
+    "positive_directional_evaluators_minimum": 2
+  },
+  "posthoc": {
+    "structural_mapping": {
+      "passes": 40,
+      "failures": 0
+    },
+    "candidate_order_sensitivity": {
+      "E1": {
+        "original_accuracy": 0.55,
+        "reversed_accuracy": 0.55,
+        "finding": "severe second-position bias"
+      },
+      "E2": {
+        "original_accuracy": 0.85,
+        "reversed_accuracy": 0.725,
+        "finding": "material second-position bias"
+      },
+      "E3": {
+        "original_accuracy": 1.0,
+        "reversed_accuracy": 1.0,
+        "finding": "order-invariant in tested reversal"
+      }
+    }
+  },
+  "raw_artifacts_github_status_at_recording": "not_yet_present_on_main",
+  "raw_artifacts_local_status": "generated_and_preserved_in_tests/run001/artifacts"
+}
