@@ -4,6 +4,46 @@ This file records changes to the SI Foundations dedicated self-claim set.
 
 The purpose is to preserve claim provenance and prevent post-hoc rewriting after tests, counterexamples, or external critique.
 
+## v0.1.5 — 2026-10-13 — RUN-001 completed; no claim revision
+
+### Confirmatory result
+
+RUN-001 completed with 480/480 evaluator outputs and zero malformed scored evaluations. The mechanical leakage audit passed with zero findings before scoring.
+
+The frozen pooled condition results were:
+
+- C0: 0.0000
+- C1: 0.0083
+- C2: 0.8000
+- C3: 0.6667
+- C2 − C0: 0.8000
+- C2 − C1: 0.7917
+
+The predeclared supportive criterion required pooled C2 >= 0.85. Because observed pooled C2 was 0.80, the frozen classifier returned **`ambiguous`**. The threshold was not changed after observing the result.
+
+### Post-hoc diagnosis
+
+After scoring, C2 error analysis showed that all E1 and E2 C2 errors pointed from truth Path 1 to chosen Path 2. A structural audit confirmed 40/40 terminal-to-ground-truth mappings with zero failures.
+
+Candidate packets had always displayed Path 1 first and Path 2 second. Reversing only candidate display order produced:
+
+- E1: original 0.55, reversed 0.55, with its near-total preference flipping to whichever candidate appeared second;
+- E2: original 0.85, reversed 0.725, with a material second-position effect;
+- E3: original 1.00, reversed 1.00, fully order-invariant in the tested reversal.
+
+This post-hoc finding does **not** rescore or replace the confirmatory result. RUN-001 remains `ambiguous`.
+
+### Claim status
+
+CLAIM-001 is not revised by this result. RUN-001 provides a large directional trajectory-information effect but does not satisfy the frozen confirmatory support threshold. The evaluator-layer candidate-order confound identified post hoc becomes a prospective design requirement for replication: candidate display order must be independently counterbalanced or randomized.
+
+Primary records:
+
+- `tests/RUN-001-RESULTS.md`
+- `tests/RUN-001-POSTHOC-ORDER-SENSITIVITY.md`
+- `tests/RUN-001-E3-RUNTIME-NOTE.md`
+- `tests/run001/results-summary.json`
+
 ## v0.1.4 — 2026-10-12 — RUN-001 pre-evaluation execution revision
 
 ### Change
