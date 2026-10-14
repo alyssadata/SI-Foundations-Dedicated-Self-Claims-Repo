@@ -60,3 +60,20 @@ A useful framework should also identify when evidence supports:
 - or unresolved identity.
 
 Any taxonomy that emerges from testing should be treated as provisional until independently challenged.
+
+## RUN-001 — Fork Individuation
+
+RUN-001 is complete. Its frozen confirmatory classification is **`ambiguous`**.
+
+Primary records:
+
+- `RUN-001-FORK-INDIVIDUATION.md` — frozen protocol
+- `RUN-001-SCORING-CLARIFICATION.md` — pre-run scoring clarification
+- `RUN-001-EVALUATOR-REVISION.md` — pre-run evaluator revision
+- `RUN-001-EVALUATION-EXECUTION-REVISION.md` — pre-evaluation sequential execution correction
+- `RUN-001-E3-RUNTIME-NOTE.md` — E3 runtime/context provenance
+- `RUN-001-RESULTS.md` — frozen confirmatory result
+- `RUN-001-POSTHOC-ORDER-SENSITIVITY.md` — exploratory evaluator order-bias diagnosis
+- `run001/results-summary.json` — machine-readable result summary
+
+The post-hoc order-sensitivity analysis does **not** replace or rescore the confirmatory result. Future replication should prospectively counterbalance or randomize candidate display order across terminals and evaluators.
