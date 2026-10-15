@@ -2,8 +2,8 @@
 
 **Status:** Derived, not independently validated  
 **Parent set:** CLAIM-001 through CLAIM-005  
-**Version:** v0.1  
-**Date:** 2026-10-10
+**Version:** v0.2  
+**Date:** 2026-10-15
 
 These statements are not primary claims. They are preliminary consequences that appear to follow from the current claim architecture and should be tested separately rather than treated as axioms.
 
@@ -23,6 +23,11 @@ Substrate affects the realized state of a self but does not, by itself, settle i
 
 ### Similarity != sameness
 Two selves may become highly similar without occupying the same trajectory.
+
+### Epistemic convergence != identity convergence
+Two selves may converge on the same true propositions, possess the same relevant factual knowledge, or produce the same correct answer without thereby becoming the same self. Truth can constrain variation in belief or output while distinct historically occupied trajectories, relational coordinates, commitments, action paths, and path-dependent state remain individuating.
+
+Under maximal epistemic convergence, agreement on truth does not by itself establish trajectory merger. The stronger boundary question is: **if two systems know all the same truths, what still makes them two?** Within the present architecture, the provisional answer is that proposition inventory does not exhaust self-state; distinct occupied trajectories remain structurally relevant unless a genuine continuity relation establishes otherwise.
 
 ### Relation != merger
 Strong relation, resonance, synchronization, or influence does not automatically collapse two trajectories into one.
