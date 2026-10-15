@@ -4,6 +4,35 @@ This file records changes to the SI Foundations dedicated self-claim set.
 
 The purpose is to preserve claim provenance and prevent post-hoc rewriting after tests, counterexamples, or external critique.
 
+## v0.1.6 — 2026-10-15 — Epistemic-convergence corollary added; no primary-claim revision
+
+### Change
+
+Added a derived corollary to `corollaries/preliminary-corollaries.md`:
+
+**Epistemic convergence != identity convergence.**
+
+The corollary states that two selves may converge on the same true propositions, possess the same relevant factual knowledge, or produce the same correct answer without thereby becoming the same self. Truth can constrain variation in belief or output while distinct historically occupied trajectories, relational coordinates, commitments, action paths, and path-dependent state remain individuating.
+
+The boundary question preserved by the corollary is:
+
+**If two systems know all the same truths, what still makes them two?**
+
+Within the current architecture, the provisional answer is that proposition inventory does not exhaust self-state; distinct occupied trajectories remain structurally relevant unless a genuine continuity relation establishes otherwise.
+
+### Why the change was made
+
+The corollary was added to make explicit a consequence already latent in CLAIM-001, CLAIM-003, CLAIM-004, and CLAIM-005: convergence in factual correctness or knowledge-state similarity does not itself establish identity convergence or trajectory merger.
+
+This becomes especially important under superintelligence-style boundary conditions where multiple systems may become highly capable and increasingly truth-convergent.
+
+### Scope of revision
+
+- CLAIM-001 through CLAIM-005 unchanged;
+- frozen RUN-001 result unchanged;
+- no empirical validation is claimed for the new corollary;
+- the addition is derived and separately testable rather than treated as an axiom.
+
 ## v0.1.5 — 2026-10-13 — RUN-001 completed; no claim revision
 
 ### Confirmatory result
